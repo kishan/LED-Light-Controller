@@ -48,7 +48,9 @@ colorwheel = [red, green, blue]
 for x in range(100):
 	i = x % len(colorwheel)
 	color = colorwheel[i]
-	sleep.time(1) #sleep for one second
+	print color
+	bulb.setRgb(*color, persist=False)
+	time.sleep(1) #sleep for one second
 
 
 
